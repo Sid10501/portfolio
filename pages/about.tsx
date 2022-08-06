@@ -126,7 +126,17 @@ const About = ({ companies, institutes }) => {
       <PageSlideFade>
         <StaggerChildren>
           <MotionBox>
+            <Heading
+              fontSize={{ base: '3xl', lg: '5xl' }}
+              color={useColorModeValue('blue.700', 'teal.300')}
+            >
+              More About Me
+            </Heading>
             <Heading>
+              <VStack>
+                <Box className="sectionDivider"></Box>
+              </VStack>
+
               <Flex alignItems="center">
                 <Header underlineColor={TURQUOISE} mt={0} mb={0}>
                   Experience
@@ -137,7 +147,7 @@ const About = ({ companies, institutes }) => {
               </Flex>
             </Heading>
           </MotionBox>
-          <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
+          <VStack spacing={4} marginBottom={6} mx={[0, 0, 6]} mt={12}>
             {companies.map((company, index) => (
               <MotionBox whileHover={{ y: -5 }} key={index}>
                 <Card

@@ -1,0 +1,51 @@
+.sectionDivider{
+    width: 300px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #fff;
+    background: linear-gradient(270deg, #63B3ED 0%, #945DD6 100%);
+  
+    margin: 1rem 0;
+ }
+ 
+ .sectionDivider.sm{
+    width: 100px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #fff;
+    background: linear-gradient(270deg, #63B3ED 0%, #945DD6 100%);
+  
+    margin: 1rem 0;
+ }
+ 
+ .sectionDivider.md{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #fff;
+    background: linear-gradient(270deg, #63B3ED 0%, #945DD6 100%);
+  
+    margin: 1rem 0;
+ }
+ 
+ .sectionDivider.lg{
+    width: 450px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #fff;
+    background: linear-gradient(270deg, #63B3ED 0%, #945DD6 100%);
+  
+    margin: 1rem 0;
+ }
+ 
+ @media (max-width: 30em) {
+    .sectionDivider,.sectionDivider.md,.sectionDivider.lg{
+       width: 150px;
+    }
+ }  
+ 
+ @media (max-width: 48em) {
+    .sectionDivider,.sectionDivider.md,.sectionDivider.lg{
+       width: 150px
+    }
+ }

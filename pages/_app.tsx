@@ -9,7 +9,10 @@ import { AnimatePresence } from 'framer-motion'
 import { theme } from 'components/theme'
 import { AccentGlobal } from 'components/theme/Accent'
 import { FontsGlobal } from 'components/theme/fonts'
-import '../styles/home.css'
+import '../styles/app.css'
+import "../styles/sectionDevider.css";
+import "../styles/home.css";
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()

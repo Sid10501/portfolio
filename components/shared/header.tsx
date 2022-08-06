@@ -21,7 +21,7 @@ const Header = ({
     lineHeight="shorter"
     fontWeight="bold"
     {...props}
-    textAlign="left"
+    textAlign="center"
   >
     <UnderlinedText color={underlineColor}>{children}</UnderlinedText>
     {emoji ? ' ' + emoji : ''}
