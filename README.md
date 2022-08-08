@@ -8,7 +8,6 @@
 - **Styling**: [Chakra UI](https://chakra-ui.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
 - **Markdown Processor**: [remark](https://remark.js.org/)
-- **ORM**: [prisma](https://www.prisma.io/)
 - **Deployment**: [Vercel](https://vercel.com)
 
 
