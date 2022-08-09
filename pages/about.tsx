@@ -127,16 +127,14 @@ const About = ({ companies, institutes }) => {
         <StaggerChildren>
           <MotionBox>
             <Heading
-              fontSize={{ base: '3xl', lg: '5xl' }}
-              color={useColorModeValue('blue.700', 'teal.300')}
+              fontSize={{ base: '5xl', md: '6xl' }}
+              className={'animatedText'}
+              bgClip={{ base: 'text', md: undefined }}
+              fontWeight="bold"
             >
-              More About Me
+              About Me
             </Heading>
             <Heading>
-              <VStack>
-                <Box className="sectionDivider"></Box>
-              </VStack>
-
               <Flex alignItems="center">
                 <Header underlineColor={TURQUOISE} mt={0} mb={0}>
                   Experience

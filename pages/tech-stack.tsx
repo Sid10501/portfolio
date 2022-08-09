@@ -11,7 +11,8 @@ import {
   Tab,
   TabPanel,
   useColorModeValue,
-  SimpleGrid
+  SimpleGrid,
+  Heading
 } from '@chakra-ui/react';
 import { GetStaticProps, NextPage } from 'next';
 import Section from 'components/skills/section';
@@ -74,9 +75,14 @@ const TechStack: NextPage<SkillProps> = ({ skills }) => {
         <VStack spacing={8}>
           <Section>
             <VStack>
-              <Header mt={0} mb={1}>
-                Tech Stack
-              </Header>
+            <Heading mb={1}
+          fontSize={{ base: '5xl', md: '6xl' }}
+          className={'animatedText'}
+          bgClip={{ base: 'text', md: undefined }}
+          fontWeight="bold"
+        >
+          Tech Stack
+        </Heading>
               <Text
                 fontSize={'xl'}
                 color={useColorModeValue('gray.500', 'gray.200')}

@@ -10,8 +10,11 @@ import { theme } from 'components/theme'
 import { AccentGlobal } from 'components/theme/Accent'
 import { FontsGlobal } from 'components/theme/fonts'
 import '../styles/app.css'
-import "../styles/sectionDevider.css";
+import "../styles/section-divider.css";
 import "../styles/home.css";
+import "../styles/top-bar.css";
+import TopBar from 'components/shared//top-bar/top-bar'
+
 
 
 function MyApp({ Component, pageProps }: AppProps) {

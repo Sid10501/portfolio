@@ -3,6 +3,7 @@ import { Box } from '@chakra-ui/react';
 import TopNav from '../shared/top-nav';
 import Footer from '../shared/footer';
 import styles from './appLayout.module.css';
+import TopBar from 'components/shared/top-bar/top-bar';
 
 function AppLayout(props) {
   return (
@@ -14,6 +15,7 @@ function AppLayout(props) {
           {props.children}
         </Box>
       </Box>
+      <TopBar/>
       <Footer />
     </Fragment>
   );

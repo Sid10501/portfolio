@@ -24,6 +24,7 @@ const links = [
   { name: 'Projects', path: '/projects' },
   { name: 'Tech Stack', path: '/tech-stack' },
   { name: 'Achievements', path: '/achievements' },
+  { name: 'Contact', path: '/achievements' },
 ];
 
 
@@ -118,7 +119,7 @@ export default function TopNav() {
                 />
               </NextLink>
             </MotionBox>
-            <HStack as={'nav'} spacing={3} display={{ base: 'none', md: 'flex' }}>
+            <HStack spacing={3} display={{ base: 'none', md: 'flex' }}>
               {links.map((link, index) => (
                 <NavLink
                   key={index}
@@ -149,7 +150,7 @@ export default function TopNav() {
             maxW={800}
             display={['inherit', 'inherit', 'none']}
           >
-            <Stack as={'nav'} spacing={4}>
+            <Stack as={'header'} spacing={4}>
               {links.map((link, index) => (
                 <NavLink
                   key={index}

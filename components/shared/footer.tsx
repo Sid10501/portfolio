@@ -5,12 +5,13 @@ import {
   Box,
   Text,
   useColorModeValue,
-  Flex
+  Flex,
+  ButtonGroup
 } from "@chakra-ui/react";
 import siteConfig from "../../configs/site-config";
 
 const iconProps = {
-  variant: "ghost",
+  variant: "outline",
   size: "lg",
   isRound: true
 };
@@ -18,6 +19,7 @@ const iconProps = {
 const Footer = () => {
   return (
     <Stack
+    borderTopWidth={1} borderStyle={'solid'}
       as="footer"
       isInline
       spacing={[1, 2]}
@@ -37,12 +39,12 @@ const Footer = () => {
       >
         <Text
           textAlign="center"
-          fontSize="sm"
+          fontSize="md"
           color={useColorModeValue("gray.500", "gray.200")}
         >
           {siteConfig.copyright}
         </Text>
-        <Box textAlign="center">
+        <ButtonGroup direction={'row'} spacing={6}>
           {siteConfig.author.accounts.map((sc, index) => (
             <IconButton
               key={index}
@@ -50,13 +52,15 @@ const Footer = () => {
               isExternal
               href={sc.url}
               aria-label={sc.label}
-              size="lg"
-              colorScheme={sc.type}
+              // size="lg"
+              // colorScheme={sc.type}
               icon={sc.icon}
+           
               {...iconProps}
             />
           ))}
-        </Box>
+        </ButtonGroup>
+       
       </Flex>
     </Stack>
   );

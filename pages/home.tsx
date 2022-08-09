@@ -149,7 +149,7 @@ const Home: React.FC = (props) => {
               Vancouver 🇨🇦
             </Box>
           </Box>
-          <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
+          <Box fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
             This is my public sanctum, where I write about the things I&apos;m
             working on and share what I&apos;ve learned. 😊
           </Box>
