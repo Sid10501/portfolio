@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import { NextPage } from 'next';
-import { VStack, Text, useColorModeValue, Heading } from '@chakra-ui/react';
+import { VStack, Text, useColorModeValue, Heading, SimpleGrid } from '@chakra-ui/react';
 import { projectsList } from '../data/projectData';
 import PageLayout from 'components/layouts/pageLayout';
-import { PageSlideFade } from 'components/shared/animations/page-transitions';
+import { PageSlideFade, StaggerChildren } from 'components/shared/animations/page-transitions';
 import Header from 'components/shared/header';
 import GitHubCalendar from "react-github-calendar";
 import {
@@ -13,6 +13,8 @@ import {
 } from 'components/layouts/projectLayout';
 import { ProjectProps } from 'interfaces/interface';
 import { useLinkColor } from 'components/theme';
+import RepositoryCard from 'components/open-source/offline-data-card';
+import { MotionBox } from 'components/shared/animations/motion';
 
 const title = 'Projects 📚';
 const subtitle =
@@ -28,7 +30,69 @@ const Projects: NextPage<ProjectProps> = (props) => {
   return (
     <Fragment>
       <PageLayout title={title} description={subtitle}>
-        <PageSlideFade>
+      <VStack>
+          <Heading
+        
+          fontSize={{ base: '5xl', md: '6xl' }}
+          className={'animatedText'}
+          bgClip={{ base: 'text', md: undefined }}
+          fontWeight="bold"
+        >
+          Projects
+        </Heading>
+        <Text
+                fontSize={'xl'}
+                color={useColorModeValue('gray.500', 'gray.200')}
+                maxW="lg"
+                textAlign="center"
+              >
+              {subtitle}
+            </Text>
+          </VStack>
+         <PageSlideFade>
+      <StaggerChildren>
+        <SimpleGrid columns={[2, 2, 2]} spacing={4} mt={12}>
+          {projects.map((project, index) => (
+            <MotionBox whileHover={{ y: -5 }} key={index}>
+              <RepositoryCard
+                title={project.title}
+                description={project.description}
+                cover={project.imageLight}
+                blurHash={project.blurHash}
+                technologies={project.techStack}
+                url={project.site}
+                // live={repo.live}
+              
+              />
+            </MotionBox>
+          ))}
+        </SimpleGrid>
+      </StaggerChildren>
+      <GitHubCalendar
+              username="sid10501"
+              blockSize={15}
+              blockMargin={5}
+              color={linkColor}
+              fontSize={16}
+            />
+    </PageSlideFade>
+      </PageLayout>
+    </Fragment>
+  );
+};
+
+export function getStaticProps() {
+  return {
+    props: {
+      projects: projectsList
+    }
+  };
+}
+
+export default Projects;
+
+
+{/* <PageSlideFade>
           <VStack>
           <Heading
         
@@ -67,18 +131,4 @@ const Projects: NextPage<ProjectProps> = (props) => {
               fontSize={16}
             />
           </VStack>
-        </PageSlideFade>
-      </PageLayout>
-    </Fragment>
-  );
-};
-
-export function getStaticProps() {
-  return {
-    props: {
-      projects: projectsList
-    }
-  };
-}
-
-export default Projects;
+        </PageSlideFade> */}

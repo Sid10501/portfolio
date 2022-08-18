@@ -7,7 +7,7 @@ import {
   IconButton,
   useDisclosure,
   useColorModeValue,
-  Stack,
+  Stack
 } from '@chakra-ui/react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -18,16 +18,15 @@ import { useRouter } from 'next/router';
 import { AccentPicker } from 'components/theme/Accent';
 import { useLinkColor } from 'components/theme';
 import { MotionBox } from 'components/shared/animations/motion';
+import { AnimatePresence } from 'framer-motion';
 
 const links = [
   { name: 'About', path: '/about' },
   { name: 'Projects', path: '/projects' },
-  { name: 'Tech Stack', path: '/tech-stack' },
+  { name: 'Skills', path: '/tech-stack' },
   { name: 'Achievements', path: '/achievements' },
-  { name: 'Contact', path: '/achievements' },
+  { name: 'Contact', path: '/contact' }
 ];
-
-
 
 interface NavLinkProps {
   index?: number;
@@ -66,10 +65,7 @@ const NavLink = (props: NavLinkProps) => {
   );
 };
 
-
-
-
-export default function TopNav() {
+export default function TopNav({ visibility, setBottomBarVisibiliy }) {
   const linkColor = useLinkColor();
   const router = useRouter();
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -109,13 +105,15 @@ export default function TopNav() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <MotionBox whileHover={{ scale: 1.2 }} shadow="md" rounded="full">
-              <NextLink href={'/'} passHref>
+              <NextLink href={'/home'} passHref>
                 <Avatar
                   as={Link}
                   size={'sm'}
                   showBorder={true}
                   borderColor={linkColor}
-                  src={'https://avatars.githubusercontent.com/u/41829412?s=400&u=ecb3caa0eb40a5b6d872ac46c25e245d8f730d3a&v=4'}
+                  src={
+                    'https://avatars.githubusercontent.com/u/41829412?s=400&u=ecb3caa0eb40a5b6d872ac46c25e245d8f730d3a&v=4'
+                  }
                 />
               </NextLink>
             </MotionBox>
@@ -129,7 +127,6 @@ export default function TopNav() {
                   onClose={onClose}
                 />
               ))}
-            
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
@@ -138,9 +135,28 @@ export default function TopNav() {
               variant="ghost"
               zIndex={1}
               color={linkColor}
-              mr={2}
+              mr={4}
             />
-            <ColorModeSwitcher justifySelf="flex-end" />
+            <Box paddingRight={5}>
+              <ColorModeSwitcher justifySelf="center" />
+            </Box>
+            <Box display={{ base: 'none', md: 'flex' }}>
+            <AnimatePresence exitBeforeEnter initial={false}>
+              <MotionBox
+                key={visibility ? 'up' : 'down'}
+                onClick={() => setBottomBarVisibiliy(!visibility)}
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 20, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                cursor="pointer"
+                fontSize={['2xl', '3xl', '3xl']}
+              >
+                {visibility ? '👍' : '👎'}
+              </MotionBox>
+            </AnimatePresence>
+            </Box>
+          
           </Flex>
         </Flex>
         {isOpen ? (

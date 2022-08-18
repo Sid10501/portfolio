@@ -74,7 +74,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
                   </Text>
                 </HStack>
               </Tooltip>
-              <HStack
+              {/* <HStack
                 cursor={'pointer'}
                 onClick={(e) => handleLinkClick(e, url)}
               >
@@ -92,7 +92,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
                     {stargazers_count}
                   </Box>
                 </Box>
-              </HStack>
+              </HStack> */}
             </Flex>
             {language && (
               <Flex justifyContent={'space-between'} width="100%">

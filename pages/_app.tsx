@@ -12,8 +12,7 @@ import { FontsGlobal } from 'components/theme/fonts'
 import '../styles/app.css'
 import "../styles/section-divider.css";
 import "../styles/home.css";
-import "../styles/top-bar.css";
-import TopBar from 'components/shared//top-bar/top-bar'
+import "../styles/bottom-bar.css";
 
 
 

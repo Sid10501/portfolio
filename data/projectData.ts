@@ -1,68 +1,74 @@
 export const projectsList = [
   {
-    title: 'Something Central',
-    imageLight: '/assets/images/projects/cover/templateskart.png',
-    blurHash: 'L4ADc400P*Zi4Tu1y;Qo00pH#YXl',
-    site: 'https://templateskart.com',
-    gitHub: 'https://github.com/MA-Ahmad/templatesKart',
+    title: 'Dyne Analytics Dashboard',
+    imageLight: '/assets/images/projects/cover/dynedashboard.png',
+    blurHash: 'L6SiaA_N%N%NVYyDH?RixvozH?oL',
+    site: 'https://dash.dyneapp.ca/',
     description:
-`A platform for NGOs to manage schedules, volunteers, future events, members’ expenditures, and rewards, currently 50+
-organisations, 150+ volunteers and 20 founders.
-Java application that persists multiple JSONObjects in a local database allows users to save and load data through a GUI
-utilising audio and swing API.`,
-    techStack: ['React', 'Nextjs', 'ChakraUI']
+      'Our One-Stop dashboard leverages unique “Dine-In” Analytics to provide direct insight on your new and loyal customers through revenue forecasting, competitor analysis, AI-enhanced review and menu management, our coupon marketplace, and much more!',
+    techStack: ['React', 'Node.js', 'Auth0', 'chakraui']
+  },
+  {
+    title: 'Dyne Mobile App',
+    site: 'https://onelink.to/dyne/',
+    imageLight: '/assets/images/projects/cover/dyneapp.png',
+    blurHash: 'LrQ+Tv.mQ-W=MxtRb^iwn4tRoznP',
+    description:
+      'Dyne helps you connect and reconnect through AI recommendations, gamified map-based features, and amazing rewards. Join our community to meetup with friends, use our new Scavenger Hunt feature to get rewarded to go on foodie quests around your city, and find the best deals in town – all while levelling up to earn more Dyne Bucks to redeem on gift cards and events! In short, all our foodies eat, save, and earn! ',
+    techStack: ['Flutter', 'Node.js','Getx', 'MongoDB']
+  },
+  {
+    title: 'Wave Portal with Solidity',
+    imageLight: '/assets/images/projects/cover/solidity.png',
+    blurHash: 'L2M5%%0000EN00I:-oIp00kC?^sl',
+    site: 'https://github.com/Sid10501/Smart-Contacts-Solidity',
+    description:
+      `This is a Web3 application made using Solidity. On this react app, anyone on the internet can send me a 👋 + a message and have that data saved on the blockchain through an Ethereum smart contract. In return the connected ETH wallet will receive 0.001 RinkebyETH! I'll be adding more features to this soon!`,
+    techStack: ['Solidity', 'Javascript']
+  },
+  {
+    title: 'NGO Management System.',
+    imageLight: '/assets/images/projects/cover/ngo.jpg',
+    blurHash: 'L1O^uE0679I00AGT?.H{00y7p2tK',
+    site: 'https://github.com/Sid10501/NGO_Management_System',
+    description:
+      `A platform for NGOs to manage schedules, volunteers, future events, members’ expenditures, and rewards, currently 50+ organisations, 150+ volunteers and 20 founders.
+      Java application that persists multiple JSONObjects in a local database allows users to save and load data through a GUI
+      utilising audio and swing API.`,
+    techStack: ['Java', 'Swing API', 'jSON', 'k means']
+  },
+  {
+    title: 'Mashup Song Recommender.',
+    imageLight: '/assets/images/projects/cover/mashup.png',
+    blurHash: 'L09sWSxdH;s?%6axWAfk00V?%jax',
+    site: 'https://github.com/Sid10501/Mashup-Song-Recommender',
+    description: `Developed Python audio analytics service for recommending relevant songs based on a user’s interest.
+    ● Classification of songs based on bpm and release date; model trained on the Million Song Dataset.`,
+    techStack: ['Python']
   },
   {
     title: 'CernSpace. | Community Computing Power for Researchers.',
     imageLight: '/assets/images/projects/cover/cernspace.png',
     blurHash: 'L4ADc400P*Zi4Tu1y;Qo00pH#YXl',
-    site: 'https://smata.com/',
+    site: 'https://github.com/Sid10501/CernSpaceWeb',
     description:
       'Developed a Full Stack Web Application made in 1 day with React-Bootstrap and Typescript API. Managed real-time search queries and asynchronous data instantly with Firebase Functions and Firestore.',
-    techStack: ['Rails', 'React', 'Javascript']
+    techStack: ['Bootstrap', 'React', 'Javascript','Firebase']
   },
   {
-    title: 'Peterpitch',
-    imageLight: '/assets/images/projects/cover/peterpitch.png',
-    blurHash: 'L4ADc400P*Zi4Tu1y;Qo00pH#YXl',
-    site: 'https://peterpitch.com/',
-    description:
-      'Peterpitch is a tool that takes the fun in your company seriously and turns your meetings into real performance boosters.',
-    techStack: ['Rails', 'React', 'Javascript']
-  },
-  {
-    title: 'Notch',
-    site: 'https://www.hellonotch.com/',
-    imageLight: '/assets/images/projects/cover/notch.png',
-    blurHash: 'L0Aer?tjH[tPyAayj[j[00ay%xkB',
-    description:
-      'This is a project management website for design and procurement teams. It helps to collaborate and manage all of your floor plans in one place.',
-    techStack: ['Rails', 'Javascript']
-  },
-  {
-    title: 'Workof Ecommerce',
-    imageLight: '/assets/images/projects/cover/workof.png',
+    title: 'Predicting The Duration Of Tennis Games',
+    imageLight: '/assets/images/projects/cover/tennis.jpg',
     blurHash: 'L2M5%%0000EN00I:-oIp00kC?^sl',
-    site: 'https://workof.com/',
+    site: 'https://github.com/Sid10501/Data-Analysis-and-Hypothesis-in-R',
     description:
-      'This is an Ecommerce furniture site. It provides a single platform to multiple vendors where they can put their products on sale.',
-    techStack: ['Rails', 'Javascript']
+      'Applied clustering, classification, testing and preprocess methods to determine the best qualifiers through Ggpairs and predict the length of a tennis game with 70% accuracy through a k means model trained on a dataset of over 5000 observations of best of 3 tennis game series.',
+    techStack: ['R', 'Jupyter']
   },
   {
-    title: 'Souq of Qatar',
-    imageLight: '/assets/images/projects/cover/souq.png',
-    blurHash: 'L1O^uE0679I00AGT?.H{00y7p2tK',
-    site: 'https://www.souqofqatar.com/',
-    description:
-      'Souq of Qatar is online comparison website. This website is independent of any retailers, it displays the products of all the major stores.',
-    techStack: ['Rails', 'Javascript']
+    title: 'Hospital Management System',
+    imageLight: '/assets/images/projects/cover/hospital.jpeg',
+    blurHash: 'L2M5%%0000EN00I:-oIp00kC?^sl',
+    description: `Developed a Menu-Driven C++ program using I/O streams to store and read data locally using various libraries including stdio.h, stdlib.h, dos.h, conio.h, etc allowing the user to mark attendance, register and automatically assign patients based on ailments, specialty doctors and floor wings in a hospital.`,
+    techStack: ['C++']
   },
-  {
-    title: 'GoSave',
-    imageLight: '/assets/images/projects/cover/gosave.png',
-    blurHash: 'L09sWSxdH;s?%6axWAfk00V?%jax',
-    site: 'https://gosavehq.com/',
-    description: `The GoSave app let's you send allowances, assign chores, and approve spending all from your smartphone.`,
-    techStack: ['Rails']
-  }
 ];

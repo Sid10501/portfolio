@@ -48,47 +48,25 @@ const Achievements = () => {
         </Heading>
       <VStack textAlign="start" align="start" mb={5}>
         <Box zIndex={5}>
-          <Heading fontSize="2xl" fontWeight="600" my={5}>
+          {/* <Heading fontSize="2xl" fontWeight="600" my={5}>
             2022
-          </Heading>
+          </Heading> */}
           <Box>
-            <TimelineItem icon={FiHome} skipTrail>
-              Rebuilt my portfolio website with React, ChakraUI and Framer-motion,{' '}
-              <ExternalLink
-                color={linkColor}
-                url="https://github.com/MA-Ahmad/myPortfolio"
-                text={'source on Github'}
-                target="_blank"
-              />
-              .
+            <TimelineItem icon={FiHome}>
+              Rebuilt my portfolio website with React, ChakraUI and Framer-motion.
             </TimelineItem>
             <TimelineItem icon={FaTools}>
-              Learnt{' '}
-              <ExternalLink
-                color={linkColor}
-                url="https://www.typescriptlang.org"
-                text={'Typescript'}
-                target="_blank"
-              />{' '}
-              and{' '}
-              <ExternalLink
-                color={linkColor}
-                url="https://nextjs.org"
-                text={'Next.js'}
-                target="_blank"
-              />
+            Y-Combinator Founder Interview (top 7% of 30000 companies)
             </TimelineItem>
             <TimelineItem icon={FiPackage}>
               Top 5 Startups among 1500 at Collision 2022{' '}
-              <InternalLink color={linkColor} url="/blog" text={'Blog'} />
             </TimelineItem>
             <TimelineItem icon={FiUsers}>
               Shortlisted by CEO Insights Magazine for 'Top 10 Best Indian Business Leaders from
               Canada
             </TimelineItem>
             <TimelineItem icon={FiPackage}>
-              Published 3 posts on my portfolio website{' '}
-              <InternalLink color={linkColor} url="/blog" text={'Blog'} />
+            Entrepreneurship@UBC Top Ten Ventures at UBC, 2021
             </TimelineItem>
             <TimelineItem icon={FiPackage}>
               Published or contributed to{' '}
@@ -99,17 +77,23 @@ const Achievements = () => {
               />
             </TimelineItem>
             <TimelineItem icon={FiBarChart2}>
-              Collected 34k+ posts views and 1.5k+ total reactions on{' '}
-              <ExternalLink
-                color={linkColor}
-                url="https://dev.to/m_ahmad"
-                text={'Dev.to'}
-                target="_blank"
-              />
+            Awarded Faculty of Science International Student
+Scholarship ($5,000) by University of British Columbia, 2020
             </TimelineItem>
+            <TimelineItem icon={FiBarChart2}>
+            ● BizHacks Hackathon Finalist, 2020
+            </TimelineItem>
+            <TimelineItem icon={FiBarChart2}>
+            CERN WebFest Finalist, 2020
+            </TimelineItem>
+            <TimelineItem icon={FiBarChart2}>
+            Awarded International Major Entrance Scholarship ($80,000) by University of British Columbia, 2019
+            </TimelineItem>
+            <TimelineItem icon={FiBarChart2}>
+            Awarded Outstanding International Student Award ($10,000) by University of British Columbia, 2019            </TimelineItem>
           </Box>
         </Box>
-        <Box zIndex={5}>
+        {/* <Box zIndex={5}>
           <Heading fontSize="2xl" fontWeight="600" my={5}>
             2021
           </Heading>
@@ -199,7 +183,7 @@ const Achievements = () => {
               .
             </TimelineItem>
           </Box>
-        </Box>
+        </Box> */}
       </VStack>
     </PageSlideFade>
   );

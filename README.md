@@ -26,17 +26,4 @@
 
 ## Running Locally
 
-```sh
-git clone https://github.com/MA-Ahmad/myPortfolio
-cd myPortfolio && yarn install
-yarn dev
-```
-
 The above commands will start the application on [http://localhost:3000/](http://localhost:3000)
-
-
-<!-- ## Screens
-### Home 
-![Home Screen](/public/assets/images/screens/home_page.png)
-### Blog
-![Skills Screen](/public/assets/images/screens/blog_page.png) -->

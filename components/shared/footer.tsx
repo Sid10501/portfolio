@@ -19,8 +19,9 @@ const iconProps = {
 const Footer = () => {
   return (
     <Stack
-    borderTopWidth={1} borderStyle={'solid'}
+    // borderTopWidth={1} borderStyle={'solid'}
       as="footer"
+      // bottom={0}
       isInline
       spacing={[1, 2]}
       p={4}

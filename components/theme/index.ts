@@ -200,13 +200,13 @@ export const extendedTheme = extendTheme({
 
 export const getTagColor = (type) => {
   type = type.toLowerCase()
-  if (type === 'rails' || type === 'ruby') {
+  if (type === 'python' || type === 'java') {
     return 'red'
   } else if (type === 'react') {
     return 'cyan'
   } else if (type === 'javascript') {
     return 'yellow'
-  } else if (type === 'typescript' || type === 'tailwindcss') {
+  } else if (type === 'typescript' || type === 'flutter') {
     return 'blue'
   } else if (type === 'chakraui' || type === 'css') {
     return 'teal'

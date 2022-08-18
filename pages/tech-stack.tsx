@@ -35,12 +35,12 @@ const tabList = [
     icon: AiTwotoneThunderbolt
   },
   {
-    name: 'Web Development',
+    name: 'Web',
     filterName: 'web',
     icon: BiDesktop
   },
   {
-    name: 'App Development',
+    name: 'App',
     filterName: 'app',
     icon: BiDesktop
   },
@@ -64,18 +64,18 @@ const TechStack: NextPage<SkillProps> = ({ skills }) => {
     setSkillsList(skills);
   }, []);
 
-  const filterSkills = (tab) => {
+  const filterSkills = (tab: string | any[]) => {
     if (tab.length) setSkillsList(skills.filter((skill) => skill.type === tab));
     else setSkillsList(skills);
   };
 
   return (
-    <PageLayout title="Skills" keywords="rails, ruby, react, javascript, typescript">
+    <PageLayout title="Skills" keywords="flutter, node js, react, javascript, typescript">
       <PageSlideFade>
         <VStack spacing={8}>
           <Section>
             <VStack>
-            <Heading mb={1}
+            <Heading
           fontSize={{ base: '5xl', md: '6xl' }}
           className={'animatedText'}
           bgClip={{ base: 'text', md: undefined }}
@@ -116,8 +116,8 @@ const TechStack: NextPage<SkillProps> = ({ skills }) => {
                   </Tab>
                 ))}
               </TabList>
-              <TabPanels minHeight={'45vh'}>
-                <TabPanel px={0}>
+              <TabPanels minHeight={'70vh'}>
+                <TabPanel paddingBottom={10}>
                   <MotionBox variants={container} initial="hidden" animate="visible">
                     <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
                       {skillsList.map((tool, index) => (

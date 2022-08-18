@@ -21,9 +21,8 @@ const OfflineData = ({ repositories }) => {
                 blurHash={repo.blurHash}
                 technologies={repo.technologies}
                 url={repo.url}
-                live={repo.live}
-                stars={repo.stars}
-                fork={repo.fork}
+                // live={repo.live}
+              
               />
             </MotionBox>
           ))}

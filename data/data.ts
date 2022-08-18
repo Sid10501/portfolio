@@ -144,7 +144,6 @@ export const institutes = [
     short_title: 'UBC',
     title: 'University of British Columbia',
     alt: 'UBC image',
-    description: [],
     role: "Bachelor's of Science in Computer Science and Statistics",
     skills: [
       'project management',
@@ -155,30 +154,12 @@ export const institutes = [
     ],
     period: '2019 - 2024',
     startingYear: '2019',
-    logo: '/assets/images/logos/ubc.png',
-    awards: [
-      {
-        title: 'Faculty of Science International Student Scholarship ($5,000)',
-        description:
-          'This scholarship is made on the recommendation of the Faculty of Science, and is awarded to recognize international students who “demonstrate strong academic achievement, engagement in the Faculty, and the potential to make a scholarly contribution within their chosen field of study”.',
-        date: 'December 2020'
-      },
-      {
-        title: 'Dean’s Honour List',
-        description:
-          'Maintained an aggregate of 87% and above for 2019 - 2020 Academic year',
-        date: 'March 2020'
-      },
-      {
-        title: 'International Major Entrance Award ($80,000)',
-        description: 'International Major Entrance Scholarships (IMES) are awarded to exceptional international students entering undergraduate programs at UBC. Students receive their IMES when they enter their first year at UBC, and the scholarships are renewable for up to three additional years of study.',
-        date: 'May 2019'
-      },
-      {
-        title: 'Outstanding International Student Award ($10,000)',
-        description: 'The Outstanding International Student (OIS) Award is a one-time, merit-based entrance scholarship awarded to qualified students when they are offered admission to UBC.',
-        date: 'May 2019'
-      }
+    logo: '/assets/images/logos/ubc_logo.jpg',
+    description: [
+      '✅ Faculty of Science International Student Scholarship ($5,000), 2020',
+      '✅ Dean’s Honour List, 2021',
+      '✅ International Major Entrance Award ($80,000), 2019',
+      '✅ Outstanding International Student Award ($10,000), 2019'
     ]
   }
 ];
@@ -286,17 +267,17 @@ export const skillsArray = [
 
 export const newContent = [
   {
-    link: '/blog/chakraui-templateskart-ui-updates',
-    text: 'ChakraUI TemplatesKart - UI updates',
+    link: 'https://dyneapp.ca/',
+    text: 'DYNE Technologies Inc. (My Startup) celebrates 12.5K app users',
     showNewTag: true
   },
   {
-    link: '/blog/templateskart-free-chakra-ui-components-and-projects',
-    text: 'TemplatesKart | Free Chakra UI Components and Projects',
+    link: 'http://bit.ly/sidharthgroverporfolio',
+    text: "Here's my Figma design portfolio",
     showNewTag: true
   },
   {
-    link: '/blog/started-2022-by-updating-portfolio-website-1jde-temp-slug-4553258',
-    text: 'Started 2022 by updating portfolio website'
+    link: '',
+    text: "$95K Scholarship Award from UBC with Dean's Honour List, 2021"
   }
 ];
