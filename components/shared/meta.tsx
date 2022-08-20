@@ -30,7 +30,8 @@ const Meta = ({ title, keywords, description, image }: Props): JSX.Element => {
 
 Meta.defaultProps = {
   title: 'Sidharth Grover - Full Stack Developer',
-  keywords: 'app development, web development, programming, web design, dashboard, restaurants, founder, vp engineering, react js, dyne, food, ubc, entrepreneur, ui/ux, chakra ui',
+  keywords:
+    'app development, dyne technologies, dyne, ubc, web development, programming, web design, dashboard, restaurants, founder, vp engineering, react js, dyne, food, ubc, entrepreneur, ui/ux, chakra ui',
   description: 'Software Engineer. UI / UX Designer. Entrepreneur',
   image: SEO_IMAGE
 };
