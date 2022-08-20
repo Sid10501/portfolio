@@ -6,7 +6,7 @@ export const projectsList = [
     site: 'https://dash.dyneapp.ca/',
     description:
       'Our One-Stop dashboard leverages unique “Dine-In” Analytics to provide direct insight on your new and loyal customers through revenue forecasting, competitor analysis, AI-enhanced review and menu management, our coupon marketplace, and much more!',
-    techStack: ['React', 'Node.js', 'Auth0', 'chakraui']
+    techStack: ['React', 'Node.js', 'Auth0', 'Chakra UI', 'Javascript','Stripe','Firebase']
   },
   {
     title: 'Dyne Mobile App',
@@ -15,7 +15,7 @@ export const projectsList = [
     blurHash: 'LrQ+Tv.mQ-W=MxtRb^iwn4tRoznP',
     description:
       'Dyne helps you connect and reconnect through AI recommendations, gamified map-based features, and amazing rewards. Join our community to meetup with friends, use our new Scavenger Hunt feature to get rewarded to go on foodie quests around your city, and find the best deals in town – all while levelling up to earn more Dyne Bucks to redeem on gift cards and events! In short, all our foodies eat, save, and earn! ',
-    techStack: ['Flutter', 'Node.js','Getx', 'MongoDB']
+    techStack: ['Flutter', 'Node.js','Getx', 'MongoDB','Firebase']
   },
   {
     title: 'Wave Portal with Solidity',
@@ -44,7 +44,7 @@ export const projectsList = [
     site: 'https://github.com/Sid10501/Mashup-Song-Recommender',
     description: `Developed Python audio analytics service for recommending relevant songs based on a user’s interest.
     ● Classification of songs based on bpm and release date; model trained on the Million Song Dataset.`,
-    techStack: ['Python']
+    techStack: ['Python','Jupyter']
   },
   {
     title: 'CernSpace. | Community Computing Power for Researchers.',

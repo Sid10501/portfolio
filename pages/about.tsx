@@ -49,7 +49,7 @@ const Card = (props: CardProps) => {
         rounded="md"
       >
         <Flex justifyContent="space-between">
-          <Flex>
+          <Flex >
             <Image
               rounded="full"
               w={16}
@@ -197,14 +197,14 @@ const About = ({ companies, institutes }) => {
               </Stack>
             </Flex>
           </Heading>
-          <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
+          <VStack spacing={4} marginBottom={'40px'} align="left" mx={[0, 0, 6]} mt={12}>
             {volunteering.map((volunteer, index) => (
               <MotionBox whileHover={{ y: -5 }} key={index}>
                 <Card
                   key={index}
                   title={volunteer.title}
                   role={volunteer.role}
-                  skills={volunteer.skills}
+                  skills={[]}
                   description={volunteer.description}
                   period={volunteer.period}
                   logo={volunteer.logo}

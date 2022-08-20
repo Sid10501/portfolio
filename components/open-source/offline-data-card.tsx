@@ -87,7 +87,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
               <MotionBox whileHover="hover" variants={imageVariants} transition={transition}>
                 <AspectRatio
                   ratio={1.85 / 1}
-                  maxW="400px"
+                  // maxW="400px"
                   w="100%"
                   borderBottomWidth="1px"
                   borderColor={useColorModeValue('gray.100', 'gray.700')}
@@ -108,7 +108,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
                     noOfLines={1}
                     fontWeight="600"
                     align="left"
-                    onClick={(e) => url ?? handleLinkClick(e, url)}
+                    onClick={(e) => handleLinkClick(e, url)}
                     color={linkColor}
                   >
                     {title}

@@ -64,7 +64,6 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <Flex align={'center'} justify={'center'}>
         <Stack spacing={8} mx={'auto'} maxW={'lg'} py={4} px={6}>
           <Stack align={'center'}>
             <Heading
@@ -122,14 +121,6 @@ export default function Contact() {
             </Stack>
           </form>
         </Stack>
-        <Blur
-          position={'absolute'}
-          top={-10}
-          left={-10}
-          style={{ filter: 'blur(70px)' }}
-          zIndex={-2}
-        />
-      </Flex>
     </section>
   );
 }

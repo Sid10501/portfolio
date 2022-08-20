@@ -197,7 +197,7 @@ const Home: React.FC = (props) => {
         }}
         zIndex={1}
       >
-        <Box mt={10}>
+        <Box mt={10} mb={'100px'}>
           <ContentBox linkColor={linkColor} />
         </Box>
       </MotionBox>

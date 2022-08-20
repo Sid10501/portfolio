@@ -1,7 +1,7 @@
 export const companies = [
   {
     title: 'DYNE Technologies Inc.',
-    alt: 'DT image',
+    alt: 'DYNE Technologies Inc image',
     role: 'Co Founder and VP Engineering',
     description: [
       `✅ Developed, designed cross-platform production of DYNE App using Flutter (MVC with REST API) with a backend 
@@ -11,13 +11,13 @@ export const companies = [
       and ClickUp.`,
       `✅ Grew company 40x to a 4M valuation in 2.5 years, created product-market fit, and became the top 1 venture in BC.`
     ],
-    skills: ['flutter', 'react', 'typescript', 'GCP', 'MongoDB', 'node.js'],
+    skills: ['Flutter', 'React', 'Typescript', 'GCP', 'MongoDB', 'Node.js', 'Figma','Hootsuite'],
     period: 'Oct 2019 - Present',
     logo: '/assets/images/logos/dyne_logo.png'
   },
   {
     title: 'Deloitte',
-    alt: 'BT image',
+    alt: 'Deloitte image',
     role: 'Cloud Engineering Analyst',
     description: [
       `✅ Created strategic plans, and Cloud Transformation Roadmaps, assessed the risk of data migration and implemented
@@ -27,61 +27,61 @@ export const companies = [
       portals using HP LoadRunner and scripting using VuGen. Analysed network policies for an EKS cluster using Calico and 
       Cilium.`
     ],
-    skills: ['ruby', 'rails', 'javascript', 'python'],
+    skills: ['HP LoadRunner', 'AWS', 'Calico', 'Python','VuGen','Terraform','Cloud Transformation'],
     period: 'Jan 2022 - Apr 2022',
     logo: '/assets/images/logos/deloitte_logo.png'
   },
   {
     title: 'Arista Networks.',
-    alt: 'Brainplow image',
+    alt: 'Arista Networks image',
     role: 'Software Engineer',
     description: [
       `✅ Worked on Arista’s Cloud Vision platform while using multiple technologies, including JavaScript, React, Redux, 
       Babel, etc., incorporating Ant Design with HOC - React currently in beta testing with the company’s clients.`,
       `✅ Implementing 100% e2e Cypress testing for existing features as well as building an independent feature`
     ],
-    skills: ['javascript', 'python', 'angular'],
+    skills: ['Javascript', 'React', 'Redux','Babel','Ant Design','Cypress'],
     period: '2017 - 2018',
     logo: '/assets/images/logos/arista_logo.png'
   },
   {
     title: 'Audiocation',
-    alt: 'BZH image',
+    alt: 'Audiocation image',
     role: 'Co Founder and CEO',
     description: [
       '✅ A startup that envisions helping the differently-abled to access modern education using technology-enabled assistive tools as an innovative pedagogy.',
       '✅ Responsible for using the available technology to convert high school curriculum books into audiobooks to create a massive repository of 50+ e-audiobooks',
       '✅ Designed and executed company catalog for infrastructure support and development.'
     ],
-    skills: ['ruby', 'rails', 'typescript', 'javascript', 'react', 'aws'],
+    // skills: ['ruby', 'rails', 'typescript', 'javascript', 'react', 'aws'],
     period: 'Feb 2018 - Aug 2019',
     logo: '/assets/images/logos/audiocation_logo.png'
   },
   {
     title: 'Markitiers',
-    alt: 'Brainplow image',
+    alt: 'Markitiers image',
     role: 'Web Design Associate',
     description: [
       `✅ Proposed UI/UX design changes and improvements for WordPress Websites.`,
       `✅ Put together videos for social media, collaborating with design and project developers to understand project
       scope, and offer scalable solutions.`
     ],
-    skills: ['javascript', 'python', 'angular'],
+    skills: ['Wordpress', 'Canva', 'figma'],
     period: 'Jun 2018 - Aug 2018',
     logo: '/assets/images/logos/markitiers_logo.jpeg'
   },
   {
     title: 'Doodlecorp Communications LLP',
-    alt: 'Brainplow image',
+    alt: 'Doodlecorp image',
     role: 'Graphic Design Intern',
     description: [
-      `✅ Edited videos and created design guidelines to create digital content for multiple social media platforms.`,
-      `✅ Developed creative designs for marketing packages, including print materials, brochures, banners.`
+      "✅ Edited videos and created design guidelines to create digital content for multiple social media platforms.",
+      "✅ Developed creative designs for marketing packages, including print materials, brochures, banners.                                                  x"
     ],
-    skills: ['javascript', 'python', 'angular'],
+    skills: ['Adobe Illustration', 'Premiere Pro', 'After Effects'],
     period: 'Jun 2018 - Aug 2018',
     logo: '/assets/images/logos/doodlecorp_logo.jpeg'
-  }
+  },
 ];
 
 export const volunteering = [
@@ -93,7 +93,7 @@ export const volunteering = [
       `✅ Helped organize different events for the CS students at UBC including headshot event, research night and various online social events. `,
       `✅ Organized and hosted Tech Industry Night where we were sponsored by various companies to help them meet CS students in UBC.`
     ],
-    skills: ['ruby', 'rails', 'python', 'typescript', 'react', 'aws'],
+    // skills: ['ruby', 'rails', 'python', 'typescript', 'react', 'aws'],
     period: 'Jul 2022 - Present',
     logo: '/assets/images/logos/csss_logo.png'
   },
@@ -106,7 +106,7 @@ export const volunteering = [
       '✅ Prepared the registration platform and attended to technical problems during events with 300+ attendees',
       '✅ Collaborated with executive members and completed admin tasks for the overall functioning of the club.'
     ],
-    skills: ['ruby', 'rails', 'typescript', 'javascript', 'react', 'aws'],
+    // skills: ['ruby', 'rails', 'typescript', 'javascript', 'react', 'aws'],
     period: 'Sep 2020 - Current',
     logo: '/assets/images/logos/bizhacks_logo.png'
   },
@@ -121,22 +121,10 @@ export const volunteering = [
       `✅ Researched news articles regarding Indian Canadian immigration, laws, politics, and collaborated
       with the media team to proofread content for the social media posts.`
     ],
-    skills: ['ruby', 'rails', 'javascript', 'python'],
+    // skills: ['ruby', 'rails', 'javascript', 'python'],
     period: 'May 2020 - Sep 2020',
     logo: '/assets/images/logos/naais_logo.png'
   },
-  {
-    title: 'Computer Science Student Society',
-    alt: 'CS image',
-    role: 'Communications and Social Officer',
-    description: [
-      `✅ Helped organize different events for the CS students at UBC including headshot event, research night and various online social events. `,
-      `✅ Organized and hosted Tech Industry Night where we were sponsored by various companies to help them meet CS students in UBC.`
-    ],
-    skills: ['ruby', 'rails', 'python', 'typescript', 'react', 'aws'],
-    period: 'Jul 2022 - Present',
-    logo: '/assets/images/logos/csss_logo.png'
-  }
 ];
 
 export const institutes = [

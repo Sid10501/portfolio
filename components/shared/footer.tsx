@@ -7,19 +7,19 @@ import {
   useColorModeValue,
   Flex,
   ButtonGroup
-} from "@chakra-ui/react";
-import siteConfig from "../../configs/site-config";
+} from '@chakra-ui/react';
+import siteConfig from '../../configs/site-config';
 
 const iconProps = {
-  variant: "outline",
-  size: "lg",
+  variant: 'outline',
+  size: 'lg',
   isRound: true
 };
 
 const Footer = () => {
   return (
     <Stack
-    // borderTopWidth={1} borderStyle={'solid'}
+      // borderTopWidth={1} borderStyle={'solid'}
       as="footer"
       // bottom={0}
       isInline
@@ -27,21 +27,22 @@ const Footer = () => {
       p={4}
       justifyContent="space-between"
       alignItems="center"
-      w={["100%", "85%", "80%"]}
-      maxW={800}
+      w={['100%', '85%', '80%']}
+      maxW={1000}
       mx="auto"
     >
       <Flex
-        flexDirection={["column", "column", "row"]}
-        flexFlow={["column-reverse", "column-reverse"]}
-        justifyContent={["center", "space-between"]}
+        flexDirection={['column', 'column', 'row']}
+        flexFlow={['column-reverse', 'column-reverse']}
+        justifyContent={['center', 'space-between']}
         alignItems="center"
         w="100%"
       >
         <Text
+          my={'20px'}
           textAlign="center"
-          fontSize="md"
-          color={useColorModeValue("gray.500", "gray.200")}
+          fontSize="lg"
+          color={useColorModeValue('gray.500', 'gray.200')}
         >
           {siteConfig.copyright}
         </Text>
@@ -56,12 +57,10 @@ const Footer = () => {
               // size="lg"
               // colorScheme={sc.type}
               icon={sc.icon}
-           
               {...iconProps}
             />
           ))}
         </ButtonGroup>
-       
       </Flex>
     </Stack>
   );

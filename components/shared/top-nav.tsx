@@ -163,7 +163,7 @@ export default function TopNav({ visibility, setBottomBarVisibiliy }) {
           <Box
             pb={4}
             w={['100%', '100%', '80%']}
-            maxW={800}
+            maxW={1000}
             display={['inherit', 'inherit', 'none']}
           >
             <Stack as={'header'} spacing={4}>

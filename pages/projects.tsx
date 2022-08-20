@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { NextPage } from 'next';
-import { VStack, Text, useColorModeValue, Heading, SimpleGrid } from '@chakra-ui/react';
+import { VStack, Text, useColorModeValue, Heading, SimpleGrid, Box } from '@chakra-ui/react';
 import { projectsList } from '../data/projectData';
 import PageLayout from 'components/layouts/pageLayout';
 import { PageSlideFade, StaggerChildren } from 'components/shared/animations/page-transitions';
@@ -50,7 +50,8 @@ const Projects: NextPage<ProjectProps> = (props) => {
             </Text>
           </VStack>
          <PageSlideFade>
-      <StaggerChildren>
+          <Box paddingBottom={'50px'}>
+          <StaggerChildren>
         <SimpleGrid columns={[2, 2, 2]} spacing={4} mt={12}>
           {projects.map((project, index) => (
             <MotionBox whileHover={{ y: -5 }} key={index}>
@@ -68,6 +69,9 @@ const Projects: NextPage<ProjectProps> = (props) => {
           ))}
         </SimpleGrid>
       </StaggerChildren>
+          </Box>
+   <Box paddingBottom={'50px'}>
+
       <GitHubCalendar
               username="sid10501"
               blockSize={15}
@@ -75,6 +79,8 @@ const Projects: NextPage<ProjectProps> = (props) => {
               color={linkColor}
               fontSize={16}
             />
+               </Box>
+
     </PageSlideFade>
       </PageLayout>
     </Fragment>
