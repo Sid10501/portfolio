@@ -21,6 +21,7 @@ import { MotionBox } from 'components/shared/animations/motion';
 import { AnimatePresence } from 'framer-motion';
 
 const links = [
+  { name: 'Home', path: '/home' },
   { name: 'About', path: '/about' },
   { name: 'Projects', path: '/projects' },
   { name: 'Skills', path: '/tech-stack' },
