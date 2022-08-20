@@ -13,6 +13,7 @@ import '../styles/app.css'
 import "../styles/section-divider.css";
 import "../styles/home.css";
 import "../styles/bottom-bar.css";
+import Blur from 'components/shared/blur'
 
 
 
@@ -34,6 +35,13 @@ function MyApp({ Component, pageProps }: AppProps) {
       <AccentGlobal />
       <PrismGlobal />
       <AppLayout>
+      <Blur
+          position={'absolute'}
+          top={-10}
+          left={-10}
+          style={{ filter: 'blur(70px)' }}
+          zIndex={-2}
+        />
         <AnimatePresence
           exitBeforeEnter
           initial={false}

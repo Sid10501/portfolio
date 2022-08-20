@@ -1,5 +1,10 @@
 import * as React from 'react';
-import { FiPackage, FiHome, FiEdit2, FiUsers, FiBarChart2 } from 'react-icons/fi';
+import { FiPackage, FiHome, FiEdit2, FiUsers, FiBarChart2, FiAward } from 'react-icons/fi';
+import { MdOutlineLeaderboard, MdAttachMoney } from 'react-icons/md';
+import { DiHackernews } from 'react-icons/di';
+
+
+MdOutlineLeaderboard;
 import { FaTools } from 'react-icons/fa';
 import { VStack, Heading, Box, Link, LinkProps } from '@chakra-ui/react';
 import { TimelineItem } from './Timeline';
@@ -14,83 +19,61 @@ interface ExternalLinkProps extends LinkProps {
   text: string;
 }
 
-const ExternalLink: React.FC<ExternalLinkProps> = ({ url, linkProps, text, ...props }) => {
-  return (
-    <NextLink href={url} passHref>
-      <Link {...linkProps} {...props}>
-        {text}
-      </Link>
-    </NextLink>
-  );
-};
-
-const InternalLink: React.FC<ExternalLinkProps> = ({ url, linkProps, text, ...props }) => {
-  return (
-    <NextLink href={url} passHref>
-      <Link {...linkProps} {...props}>
-        {text}
-      </Link>
-    </NextLink>
-  );
-};
 const Achievements = () => {
-  const linkColor = useLinkColor();
 
   return (
     <PageSlideFade>
-        <Heading
-          fontSize={{ base: '5xl', md: '6xl' }}
-          className={'animatedText'}
-          bgClip={{ base: 'text', md: undefined }}
-          fontWeight="bold"
-        >
-          Achievements
-        </Heading>
+      <Heading
+        my={5}
+        fontSize={{ base: '5xl', md: '6xl' }}
+        className={'animatedText'}
+        bgClip={{ base: 'text', md: undefined }}
+        fontWeight="bold"
+      >
+        Achievements
+      </Heading>
       <VStack textAlign="start" align="start" mb={5}>
         <Box zIndex={5}>
-          {/* <Heading fontSize="2xl" fontWeight="600" my={5}>
-            2022
-          </Heading> */}
           <Box>
             <TimelineItem icon={FiHome}>
-              Rebuilt my portfolio website with React, ChakraUI and Framer-motion.
+              Rebuilt my portfolio website with React, ChakraUI and Firebase, Aug 2022
             </TimelineItem>
-            <TimelineItem icon={FaTools}>
-            Y-Combinator Founder Interview (top 7% of 30000 companies)
+            <TimelineItem icon={MdOutlineLeaderboard}>
+              Top 5 Startups among 1500 at Collision 2022, July 2022
             </TimelineItem>
-            <TimelineItem icon={FiPackage}>
-              Top 5 Startups among 1500 at Collision 2022{' '}
+            <TimelineItem icon={FiAward}>
+              Shortlisted by CEO Insights Magazine for 'Top 10 Indian Business Leaders from
+              Canada, Mar 2022
             </TimelineItem>
-            <TimelineItem icon={FiUsers}>
-              Shortlisted by CEO Insights Magazine for 'Top 10 Best Indian Business Leaders from
-              Canada
+            <TimelineItem icon={MdOutlineLeaderboard}>
+              Entrepreneurship@UBC Top 7 Ventures at UBC, Jan 2022
             </TimelineItem>
-            <TimelineItem icon={FiPackage}>
-            Entrepreneurship@UBC Top Ten Ventures at UBC, 2021
+            <TimelineItem icon={MdAttachMoney}>
+              Raised 250K Pre Seed for DYNE Technologies Inc., Jan 2022
             </TimelineItem>
-            <TimelineItem icon={FiPackage}>
-              Published or contributed to{' '}
-              <InternalLink
-                color={linkColor}
-                url="/open-source"
-                text={'20+ open-source repositories'}
-              />
+            <TimelineItem icon={MdOutlineLeaderboard}>
+              Top 1 Venture in BC - Valhalla Investment Summit, Nov 2021
             </TimelineItem>
-            <TimelineItem icon={FiBarChart2}>
-            Awarded Faculty of Science International Student
-Scholarship ($5,000) by University of British Columbia, 2020
+            <TimelineItem icon={DiHackernews}>
+              Y-Combinator Founder Interview (top 7% of 30000 companies), Aug 2021
             </TimelineItem>
-            <TimelineItem icon={FiBarChart2}>
-            ● BizHacks Hackathon Finalist, 2020
+            <TimelineItem icon={MdOutlineLeaderboard}>
+              Entrepreneurship@UBC Top Ten Ventures at UBC, May 2021
             </TimelineItem>
-            <TimelineItem icon={FiBarChart2}>
-            CERN WebFest Finalist, 2020
+            <TimelineItem icon={FiAward}>
+              UBC Innovative Project Award: Top 5 Ventures UBC, 2021
             </TimelineItem>
-            <TimelineItem icon={FiBarChart2}>
-            Awarded International Major Entrance Scholarship ($80,000) by University of British Columbia, 2019
+            <TimelineItem icon={MdAttachMoney}>
+              Awarded Faculty of Science International Student Scholarship ($5,000) by UBC, 2020
             </TimelineItem>
-            <TimelineItem icon={FiBarChart2}>
-            Awarded Outstanding International Student Award ($10,000) by University of British Columbia, 2019            </TimelineItem>
+            <TimelineItem icon={MdOutlineLeaderboard}>BizHacks Hackathon Finalist, 2020</TimelineItem>
+            <TimelineItem icon={MdOutlineLeaderboard}>CERN WebFest Finalist, 2020</TimelineItem>
+            <TimelineItem icon={MdAttachMoney}>
+              Awarded International Major Entrance Scholarship ($80,000) by UBC, 2019
+            </TimelineItem>
+            <TimelineItem icon={MdAttachMoney} skipTrail>
+              Awarded Outstanding International Student Award ($10,000) by UBC, 2019{' '}
+            </TimelineItem>
           </Box>
         </Box>
         {/* <Box zIndex={5}>

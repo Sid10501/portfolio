@@ -10,7 +10,8 @@ import {
   UnorderedList,
   ListItem,
   useColorModeValue,
-  Heading
+  Heading,
+  LinkProps
 } from '@chakra-ui/react';
 import { MotionBox, MotionFlex } from 'components/shared/animations/motion';
 import Header from 'components/shared/header';
@@ -26,6 +27,22 @@ const Home: React.FC = (props) => {
   const linkColor = useLinkColor();
   const [showEmogi, setShowEmoji] = useState(false);
   const [emojiCounter, setEmojiCounter] = useState(-1);
+
+  interface ExternalLinkProps extends LinkProps {
+    url: string;
+    linkProps?: LinkProps;
+    text: string;
+  }
+
+  const ExternalLink: React.FC<ExternalLinkProps> = ({ url, linkProps, text, ...props }) => {
+    return (
+      <NextLink href={url} passHref>
+        <Link {...linkProps} {...props}>
+          {text}
+        </Link>
+      </NextLink>
+    );
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -56,7 +73,7 @@ const Home: React.FC = (props) => {
           <MotionBox whileHover={{ scale: 1.2 }} rounded="full" shadow="lg">
             <Avatar
               name="Sidharth Grover"
-              size={'2xl'}
+              size="full"
               showBorder={true}
               borderColor={linkColor}
               src={
@@ -149,7 +166,17 @@ const Home: React.FC = (props) => {
           </Box>
           <Box fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
             This is my public sanctum, where I write about the things I&apos;m working on and share
-            what I&apos;ve learned. 😊
+            what I&apos;ve learned 😊
+          </Box>
+          <Box fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
+            I'm also the Co Founder and Vice President of Engineering at {'\n'}
+            <ExternalLink
+              color={linkColor}
+              url="https://dyneapp.ca/"
+              text={'DYNE Technologies Inc'}
+              target="_blank"
+            />
+            , a company that envisions connecting people over food while growing local economies.
           </Box>
         </MotionFlex>
       </Flex>

@@ -7,6 +7,7 @@ import {
   useColorModeValue
 } from "@chakra-ui/react";
 import { FiCheckCircle } from "react-icons/fi";
+import { useLinkColor } from "components/theme";
 
 export interface TimelineItemProps extends BoxProps {
   icon?: any;
@@ -21,6 +22,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
   children,
   ...props
 }) => {
+  const linkColor = useLinkColor();
   const color = useColorModeValue("gray.700", "gray.500");
   return (
     <Flex minH={20} {...props}>
@@ -34,7 +36,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
         <Box
           as={icon}
           size="1.25rem"
-          color={color}
+          color={linkColor}
           pos="absolute"
           left="0.875rem"
           top="0.875rem"

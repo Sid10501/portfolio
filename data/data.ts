@@ -173,10 +173,31 @@ export const skillsArray = [
     image: '/assets/images/skills/react.png'
   },
   {
+    name: 'Flutter',
+    description: 'App development',
+    link: 'https://reactjs.org/',
+    type: 'app',
+    image: '/assets/images/skills/flutter.png'
+  },
+  {
+    name: 'Dart',
+    description: 'App development',
+    link: 'https://reactjs.org/',
+    type: 'app',
+    image: '/assets/images/skills/dart.png'
+  },
+  {
+    name: 'R',
+    description: 'Statistical computing',
+    link: 'https://reactjs.org/',
+    type: 'oop',
+    image: '/assets/images/skills/r.jpeg'
+  },
+  {
     name: 'Python',
-    description: 'Web development, scrapping',
+    description: 'Data analysis, Jupyter',
     link: 'https://www.python.org/',
-    type: 'web',
+    type: 'oop',
     image: '/assets/images/skills/python.png'
   },
   {
@@ -204,14 +225,14 @@ export const skillsArray = [
     name: 'Css3',
     description: 'Web design',
     link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-    type: 'design',
+    type: 'web',
     image: '/assets/images/skills/css3.png'
   },
   {
     name: 'Bootstrap',
     description: 'Web design',
     link: 'https://getbootstrap.com/',
-    type: 'design',
+    type: 'web',
     image: '/assets/images/skills/bootstrap.png'
   },
   {
@@ -236,18 +257,67 @@ export const skillsArray = [
     image: '/assets/images/skills/redis.png'
   },
   {
+    name: 'MongoDB',
+    description: 'Database',
+    link: 'https://redis.io/',
+    type: 'database',
+    image: '/assets/images/skills/mongodb.png'
+  },
+  {
     name: 'Heroku',
-    description: 'Devops',
+    description: 'Deploy, manage apps',
     link: 'https://www.heroku.com/',
     type: 'devops',
     image: '/assets/images/skills/heroku.png'
   },
   {
     name: 'AWS',
-    description: 'Devops',
+    description: 'Cloud Computing',
     link: 'https://aws.amazon.com/',
     type: 'devops',
     image: 'assets/images/skills/aws.png'
+  },
+  {
+    name: 'Google Cloud',
+    description: 'Cloud Computing',
+    link: 'https://aws.amazon.com/',
+    type: 'devops',
+    image: 'assets/images/skills/google-cloud.png'
+  },
+  {
+    name: 'Vercel',
+    description: 'Cloud platform',
+    link: 'https://aws.amazon.com/',
+    type: 'devops',
+    image: 'assets/images/skills/vercel.svg'
+  },
+  {
+    name: 'Terraform',
+    description: 'Devops',
+    link: 'https://aws.amazon.com/',
+    type: 'devops',
+    image: 'assets/images/skills/terraform.png'
+  },
+  {
+    name: 'Node.js',
+    description: 'Backend runtime env',
+    link: 'https://aws.amazon.com/',
+    type: 'devops',
+    image: 'assets/images/skills/node.png'
+  },
+  {
+    name: 'Next.js',
+    description: 'Web dev framework',
+    link: 'https://aws.amazon.com/',
+    type: 'web',
+    image: 'assets/images/skills/node.png'
+  },
+  {
+    name: 'Firebase',
+    description: 'Devops',
+    link: 'https://aws.amazon.com/',
+    type: 'devops',
+    image: 'assets/images/skills/firebase.png'
   },
   {
     name: 'Visual Studio Code',
@@ -257,17 +327,80 @@ export const skillsArray = [
     image: '/assets/images/skills/vscode.png'
   },
   {
+    name: 'Android Studio',
+    description: 'Code editor of choice',
+    link: 'https://code.visualstudio.com/',
+    type: 'app',
+    image: '/assets/images/skills/android.png'
+  },
+  {
     name: 'Figma',
     description: 'Collaborative Design',
     link: 'https://www.figma.com/',
     type: 'design',
     image: '/assets/images/skills/figma.png'
+  },
+  {
+    name: 'Adobe Suite',
+    description: 'Collaborative Design',
+    link: 'https://www.figma.com/',
+    type: 'design',
+    image: '/assets/images/skills/adobe.png'
+  },
+  {
+    name: 'Canva',
+    description: 'Graphic Design',
+    link: 'https://www.figma.com/',
+    type: 'design',
+    image: '/assets/images/skills/canva.jpeg'
+  },
+  {
+    name: 'Chakra UI',
+    description: 'UI Kit',
+    link: 'https://www.figma.com/',
+    type: 'web',
+    image: '/assets/images/skills/chakra.jpg'
+  },
+  {
+    name: 'Ant Design',
+    description: 'Web UI Kit',
+    link: 'https://www.figma.com/',
+    type: 'web',
+    image: '/assets/images/skills/ant.svg'
+  },
+  {
+    name: 'Material UI',
+    description: 'Web UI Kit',
+    link: 'https://www.figma.com/',
+    type: 'web',
+    image: '/assets/images/skills/material.png'
+  },
+  {
+    name: 'Racket',
+    description: 'Multi-paradigm programming',
+    link: 'https://www.figma.com/',
+    type: 'oop',
+    image: '/assets/images/skills/racket.png'
+  },
+  {
+    name: 'Java',
+    description: 'Object Oriented Programming',
+    link: 'https://www.figma.com/',
+    type: 'oop',
+    image: '/assets/images/skills/java.png'
+  },
+  {
+    name: 'Solidity',
+    description: 'Smart Contacts and Web3',
+    link: 'https://www.figma.com/',
+    type: 'web3',
+    image: '/assets/images/skills/solidity.svg'
   }
 ];
 
 export const newContent = [
   {
-    link: 'https://dyneapp.ca/',
+    link: 'https://onelink.to/dyne',
     text: 'DYNE Technologies Inc. (My Startup) celebrates 12.5K app users',
     showNewTag: true
   },

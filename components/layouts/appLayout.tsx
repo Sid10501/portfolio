@@ -11,7 +11,7 @@ function AppLayout(props: { children: ReactChild | ReactFragment | ReactPortal }
     <Fragment>
       <TopNav visibility={bottomBarVisibiliy} setBottomBarVisibiliy={setBottomBarVisibiliy}/>
       <DottedSvgs />
-      <Box textAlign="center" fontSize="xl" w={['90%', '85%', '80%']} maxW={800} mx="auto">
+      <Box textAlign="center" fontSize="xl" w={['90%', '85%', '80%']} maxW={1000} mx="auto">
         <Box pt={'7rem'} pb={10}>
           {props.children}
         </Box>
@@ -40,7 +40,7 @@ function DottedSvgs() {
             width="404"
             height="784"
             fill="none"
-            viewBox="0 0 404 784"
+            viewBox="0 0 170 784"
           >
             <defs>
               <pattern
@@ -54,7 +54,7 @@ function DottedSvgs() {
                 <rect x="0" y="0" width="4" height="4" fill="currentColor"></rect>
               </pattern>
             </defs>
-            <rect width="404" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"></rect>
+            <rect width="300" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"></rect>
           </svg>
         </Box>
         <Box position="absolute" right="100%">
@@ -78,7 +78,7 @@ function DottedSvgs() {
                 <rect x="0" y="0" width="4" height="4" fill="currentColor"></rect>
               </pattern>
             </defs>
-            <rect width="404" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"></rect>
+            <rect width="300" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"></rect>
           </svg>
         </Box>
       </Box>

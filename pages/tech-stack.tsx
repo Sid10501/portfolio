@@ -16,7 +16,8 @@ import {
 } from '@chakra-ui/react';
 import { GetStaticProps, NextPage } from 'next';
 import Section from 'components/skills/section';
-import { AiTwotoneThunderbolt, AiOutlineCloudServer } from 'react-icons/ai';
+import { AiTwotoneThunderbolt, AiOutlineCloudServer  } from 'react-icons/ai';
+import {IoIosPhonePortrait} from 'react-icons/io'
 import { BiDesktop } from 'react-icons/bi';
 import { GiSpiderWeb } from 'react-icons/gi';
 import SkillCard from 'components/skills/skill-card';
@@ -27,7 +28,7 @@ import { container, PageSlideFade } from 'components/shared/animations/page-tran
 import PageLayout from '../components/layouts/pageLayout';
 import { useLinkColor } from 'components/theme';
 import { SkillProps } from 'interfaces/interface';
-
+import {FaEthereum} from 'react-icons/fa';
 const tabList = [
   {
     name: 'All',
@@ -42,7 +43,7 @@ const tabList = [
   {
     name: 'App',
     filterName: 'app',
-    icon: BiDesktop
+    icon: IoIosPhonePortrait
   },
   {
     name: 'Design',
@@ -50,9 +51,19 @@ const tabList = [
     icon: GiSpiderWeb
   },
   {
+    name: 'OOP',
+    filterName: 'oop',
+    icon: GiSpiderWeb
+  },
+  {
     name: 'Devops',
     filterName: 'devops',
     icon: AiOutlineCloudServer
+  },
+  {
+    name: 'Web3',
+    filterName: 'web3',
+    icon: FaEthereum
   }
 ];
 
@@ -117,9 +128,10 @@ const TechStack: NextPage<SkillProps> = ({ skills }) => {
                 ))}
               </TabList>
               <TabPanels minHeight={'70vh'}>
-                <TabPanel paddingBottom={10}>
+              {tabList.map((tab) => (
+                <TabPanel key={tab.filterName}>
                   <MotionBox variants={container} initial="hidden" animate="visible">
-                    <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
+                    <SimpleGrid columns={[1, 1, 3]} spacing={4} mt={8}>
                       {skillsList.map((tool, index) => (
                         <SkillCard
                           key={index}
@@ -133,54 +145,7 @@ const TechStack: NextPage<SkillProps> = ({ skills }) => {
                     </SimpleGrid>
                   </MotionBox>
                 </TabPanel>
-                <TabPanel px={0}>
-                  <MotionBox variants={container} initial="hidden" animate="visible">
-                    <SimpleGrid columns={[1, 2]} spacing={4} mt={8}>
-                      {skillsList.map((tool, index) => (
-                        <SkillCard
-                          key={index}
-                          name={tool.name}
-                          description={tool.description}
-                          image={tool.image}
-                          // platform={"web"}
-                          link={tool.link}
-                        />
-                      ))}
-                    </SimpleGrid>
-                  </MotionBox>
-                </TabPanel>
-                <TabPanel px={0}>
-                  <MotionBox variants={container} initial="hidden" animate="visible">
-                    <SimpleGrid columns={[1, 2]} spacing={4} mt={8}>
-                      {skillsList.map((tool, index) => (
-                        <SkillCard
-                          key={index}
-                          name={tool.name}
-                          description={tool.description}
-                          image={tool.image}
-                          // platform={"web"}
-                          link={tool.link}
-                        />
-                      ))}
-                    </SimpleGrid>
-                  </MotionBox>
-                </TabPanel>
-                <TabPanel px={0}>
-                  <MotionBox variants={container} initial="hidden" animate="visible">
-                    <SimpleGrid columns={[1, 2]} spacing={4} mt={8}>
-                      {skillsList.map((tool, index) => (
-                        <SkillCard
-                          key={index}
-                          name={tool.name}
-                          description={tool.description}
-                          image={tool.image}
-                          // platform={"web"}
-                          link={tool.link}
-                        />
-                      ))}
-                    </SimpleGrid>
-                  </MotionBox>
-                </TabPanel>
+              ))}
               </TabPanels>
             </Tabs>
           </Section>

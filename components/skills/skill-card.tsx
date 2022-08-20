@@ -22,8 +22,6 @@ const SkillCard = ({ name, image, link, description }) => {
   return (
     <MotionBox variants={item}>
       <MotionBox whileHover={{ y: -5 }}>
-        <NextLink href={link} passHref>
-          <Link isExternal>
             <HStack
               p={4}
               bg={useColorModeValue('white', 'gray.800')}
@@ -58,8 +56,8 @@ const SkillCard = ({ name, image, link, description }) => {
                 ) : (
                   <Image
                     src={image}
-                    height={26}
-                    width={26}
+                    height={'26px'}
+                    width={'26px'}
                     layout="fixed"
                     rounded="md"
                   />
@@ -90,8 +88,6 @@ const SkillCard = ({ name, image, link, description }) => {
                 </VStack>
               </VStack>
             </HStack>
-          </Link>
-        </NextLink>
       </MotionBox>
     </MotionBox>
   )
