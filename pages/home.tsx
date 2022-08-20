@@ -74,7 +74,9 @@ const Home: React.FC = () => {
               size={'2xl'}
               showBorder={true}
               borderColor={linkColor}
-              src={ 'https://avatars.githubusercontent.com/u/41829412?s=400&u=ecb3caa0eb40a5b6d872ac46c25e245d8f730d3a&v=4'}
+              src={
+                'https://avatars.githubusercontent.com/u/41829412?s=400&u=ecb3caa0eb40a5b6d872ac46c25e245d8f730d3a&v=4'
+              }
             />
           </MotionBox>
         </MotionBox>
@@ -158,21 +160,21 @@ const Home: React.FC = () => {
             from{' '}
             <Box as="span" whiteSpace="nowrap">
               Vancouver 🇨🇦
+            </Box>{' '}
+            <Box fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
+              This is my public sanctum, where I write about
+              the things I&apos;m working on and share what I&apos;ve learned 😊
             </Box>
-          </Box>
-          <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            This is my public sanctum, where I write about the things I&apos;m working on and share
-            what I&apos;ve learned 😊
-          </Box>
-          <Box fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            I'm also the Co Founder and Vice President Engineering at {'\n'}
-            <ExternalLink
-              color={linkColor}
-              url="https://dyneapp.ca/"
-              text={'DYNE Technologies Inc'}
-              target="_blank"
-            />
-            , a company that envisions connecting people over food while growing local economies.
+            <Box fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
+              I'm also the Co Founder and Vice President Engineering at {'\n'}
+              <ExternalLink
+                color={linkColor}
+                url="https://dyneapp.ca/"
+                text={'DYNE Technologies Inc'}
+                target="_blank"
+              />
+              , a company that envisions connecting people over food while growing local economies.
+            </Box>
           </Box>
         </MotionFlex>
       </Flex>
