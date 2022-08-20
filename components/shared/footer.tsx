@@ -28,7 +28,7 @@ const Footer = () => {
       justifyContent="space-between"
       alignItems="center"
       w={['100%', '85%', '80%']}
-      maxW={1000}
+      maxW={800}
       mx="auto"
     >
       <Flex

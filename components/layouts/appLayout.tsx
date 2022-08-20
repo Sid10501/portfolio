@@ -11,7 +11,7 @@ function AppLayout(props: { children: ReactChild | ReactFragment | ReactPortal }
     <Fragment>
       <TopNav visibility={bottomBarVisibiliy} setBottomBarVisibiliy={setBottomBarVisibiliy}/>
       <DottedSvgs />
-      <Box textAlign="center" fontSize="xl" w={['90%', '85%', '80%']} maxW={1000} mx="auto">
+      <Box textAlign="center" fontSize="xl" w={['90%', '85%', '80%']} maxW={800} mx="auto">
         <Box pt={'7rem'} pb={10}>
           {props.children}
         </Box>

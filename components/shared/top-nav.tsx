@@ -104,7 +104,7 @@ export default function TopNav({ visibility, setBottomBarVisibiliy }) {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <MotionBox whileHover={{ scale: 1.2 }} shadow="md" rounded="full">
+            {/* <MotionBox whileHover={{ scale: 1.2 }} shadow="md" rounded="full">
               <NextLink href={'/home'} passHref>
                 <Avatar
                   as={Link}
@@ -116,7 +116,7 @@ export default function TopNav({ visibility, setBottomBarVisibiliy }) {
                   }
                 />
               </NextLink>
-            </MotionBox>
+            </MotionBox> */}
             <HStack spacing={3} display={{ base: 'none', md: 'flex' }}>
               {links.map((link, index) => (
                 <NavLink
@@ -163,7 +163,7 @@ export default function TopNav({ visibility, setBottomBarVisibiliy }) {
           <Box
             pb={4}
             w={['100%', '100%', '80%']}
-            maxW={1000}
+            maxW={800}
             display={['inherit', 'inherit', 'none']}
           >
             <Stack as={'header'} spacing={4}>

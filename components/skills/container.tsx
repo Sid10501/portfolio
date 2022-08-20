@@ -6,7 +6,7 @@ export const Container = props => (
     textAlign="center"
     fontSize="xl"
     w={["90%", "85%", "80%"]}
-    maxW={1000}
+    maxW={800}
     mx="auto"
     {...props}
   />

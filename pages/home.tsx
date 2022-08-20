@@ -17,17 +17,17 @@ import { MotionBox, MotionFlex } from 'components/shared/animations/motion';
 import Header from 'components/shared/header';
 import NextLink from 'next/link';
 import { useLinkColor } from 'components/theme';
+
 import { newContent } from 'data/data';
 
 const ANIMATION_DURATION = 0.5;
 const ORANGE = '#ff9400';
 const emojis = ['👋', '👍', '🖐'];
 
-const Home: React.FC = (props) => {
+const Home: React.FC = () => {
   const linkColor = useLinkColor();
   const [showEmogi, setShowEmoji] = useState(false);
   const [emojiCounter, setEmojiCounter] = useState(-1);
-
   interface ExternalLinkProps extends LinkProps {
     url: string;
     linkProps?: LinkProps;
@@ -43,7 +43,6 @@ const Home: React.FC = (props) => {
       </NextLink>
     );
   };
-
   useEffect(() => {
     const interval = setInterval(() => {
       if (emojiCounter >= 3) setEmojiCounter(0);
@@ -72,13 +71,10 @@ const Home: React.FC = (props) => {
         >
           <MotionBox whileHover={{ scale: 1.2 }} rounded="full" shadow="lg">
             <Avatar
-              name="Sidharth Grover"
-              size="full"
+              size={'2xl'}
               showBorder={true}
               borderColor={linkColor}
-              src={
-                'https://avatars.githubusercontent.com/u/41829412?s=400&u=ecb3caa0eb40a5b6d872ac46c25e245d8f730d3a&v=4'
-              }
+              src={ 'https://avatars.githubusercontent.com/u/41829412?s=400&u=ecb3caa0eb40a5b6d872ac46c25e245d8f730d3a&v=4'}
             />
           </MotionBox>
         </MotionBox>
@@ -145,16 +141,16 @@ const Home: React.FC = (props) => {
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
             My name is{' '}
             <Heading
-              fontSize={{ base: '5xl', md: '6xl' }}
+              fontSize={{ base: '4xl', md: '6xl' }}
               className={'animatedText'}
               bgClip={{ base: 'text', md: undefined }}
               fontWeight="bold"
             >
               Sidharth Grover
             </Heading>
-            and I&apos;m a{' '}
+            I&apos;m a Software Engineer,{' '}
             <Box as="span" whiteSpace="nowrap">
-              Software Engineer, UI / UX Designer and
+              UI / UX Designer and
             </Box>{' '}
             <Box as="span" whiteSpace="nowrap">
               an Entrepreneur&nbsp;
@@ -164,12 +160,12 @@ const Home: React.FC = (props) => {
               Vancouver 🇨🇦
             </Box>
           </Box>
-          <Box fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
+          <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
             This is my public sanctum, where I write about the things I&apos;m working on and share
             what I&apos;ve learned 😊
           </Box>
           <Box fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            I'm also the Co Founder and Vice President of Engineering at {'\n'}
+            I'm also the Co Founder and Vice President Engineering at {'\n'}
             <ExternalLink
               color={linkColor}
               url="https://dyneapp.ca/"
@@ -197,7 +193,7 @@ const Home: React.FC = (props) => {
         }}
         zIndex={1}
       >
-        <Box mt={10} mb={'100px'}>
+        <Box mt={10}>
           <ContentBox linkColor={linkColor} />
         </Box>
       </MotionBox>
