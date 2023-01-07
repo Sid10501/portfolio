@@ -1,6 +1,6 @@
 <div align="center">
   <h1><a href="https://sidharthgrover.com" target="_blank">Sidharthgrover.com</a></h1>
-  My personal portfolio website to show my skills, experience, and projects I've completed
+  My portfolio website to show my skills, experience, and projects I've completed
 </div>
 
 ## Built with
