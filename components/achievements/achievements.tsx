@@ -1,23 +1,14 @@
 import * as React from 'react';
-import { FiPackage, FiHome, FiEdit2, FiUsers, FiBarChart2, FiAward } from 'react-icons/fi';
+import { FiHome, FiAward } from 'react-icons/fi';
 import { MdOutlineLeaderboard, MdAttachMoney } from 'react-icons/md';
 import { DiHackernews } from 'react-icons/di';
 
 
 MdOutlineLeaderboard;
-import { FaTools } from 'react-icons/fa';
-import { VStack, Heading, Box, Link, LinkProps } from '@chakra-ui/react';
+import { VStack, Heading, Box } from '@chakra-ui/react';
 import { TimelineItem } from './Timeline';
 import { PageSlideFade } from 'components/shared/animations/page-transitions';
-import Header from 'components/shared/header';
-import NextLink from 'next/link';
-import { useLinkColor } from 'components/theme';
 
-interface ExternalLinkProps extends LinkProps {
-  url: string;
-  linkProps?: LinkProps;
-  text: string;
-}
 
 const Achievements = () => {
 

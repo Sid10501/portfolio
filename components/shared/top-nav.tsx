@@ -66,7 +66,7 @@ const NavLink = (props: NavLinkProps) => {
   );
 };
 
-export default function TopNav({ visibility, setBottomBarVisibiliy }) {
+export default function TopNav() {
   const linkColor = useLinkColor();
   const router = useRouter();
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -141,7 +141,7 @@ export default function TopNav({ visibility, setBottomBarVisibiliy }) {
             <Box paddingRight={5}>
               <ColorModeSwitcher justifySelf="center" />
             </Box>
-            <Box display={{ base: 'none', md: 'flex' }}>
+            {/* <Box display={{ base: 'none', md: 'flex' }}>
             <AnimatePresence exitBeforeEnter initial={false}>
               <MotionBox
                 key={visibility ? 'up' : 'down'}
@@ -156,7 +156,7 @@ export default function TopNav({ visibility, setBottomBarVisibiliy }) {
                 {visibility ? '👍' : '👎'}
               </MotionBox>
             </AnimatePresence>
-            </Box>
+            </Box> */}
           
           </Flex>
         </Flex>

@@ -83,7 +83,7 @@ const Card = (props: CardProps) => {
                   }}
                 />
               </Stack>
-              {description.map((text, index) => (
+              {description.map((text) => (
                 <Text align="left" fontSize="sm" color={`mode.${colorMode}.career.subtext`}>
                   {text}
                 </Text>

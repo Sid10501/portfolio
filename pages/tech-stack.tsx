@@ -131,7 +131,7 @@ const TechStack: NextPage<SkillProps> = ({ skills }) => {
               {tabList.map((tab) => (
                 <TabPanel key={tab.filterName}>
                   <MotionBox variants={container} initial="hidden" animate="visible">
-                    <SimpleGrid columns={[1, 1, 3]} spacing={4} mt={8} mb='60px'>
+                    <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8} mb='60px'>
                       {skillsList.map((tool, index) => (
                         <SkillCard
                           key={index}
@@ -139,7 +139,6 @@ const TechStack: NextPage<SkillProps> = ({ skills }) => {
                           description={tool.description}
                           image={tool.image}
                           // platform={"web"}
-                          link={tool.link}
                         />
                       ))}
                     </SimpleGrid>

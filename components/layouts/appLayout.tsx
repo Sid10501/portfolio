@@ -1,4 +1,4 @@
-import { Fragment, ReactChild, ReactFragment, ReactPortal, useState } from 'react';
+import { Fragment, ReactChild, ReactFragment, ReactPortal } from 'react';
 import { Box } from '@chakra-ui/react';
 import TopNav from '../shared/top-nav';
 import Footer from '../shared/footer';
@@ -6,17 +6,17 @@ import styles from './appLayout.module.css';
 import BottomBar from 'components/shared/bottom-bar';
 
 function AppLayout(props: { children: ReactChild | ReactFragment | ReactPortal }) {
-  const [bottomBarVisibiliy, setBottomBarVisibiliy] = useState(true);
+  // const [bottomBarVisibiliy, setBottomBarVisibiliy] = useState(true);
   return (
     <Fragment>
-      <TopNav visibility={bottomBarVisibiliy} setBottomBarVisibiliy={setBottomBarVisibiliy}/>
+      <TopNav />
       <DottedSvgs />
       <Box textAlign="center" fontSize="xl" w={['90%', '85%', '80%']} maxW={800} mx="auto">
         <Box pt={'7rem'} pb={10}>
           {props.children}
         </Box>
       </Box>
-      <BottomBar visibility={bottomBarVisibiliy} />
+      {/* <BottomBar visibility={bottomBarVisibiliy} /> */}
       <Footer />
     </Fragment>
   );

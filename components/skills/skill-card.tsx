@@ -5,17 +5,15 @@ import {
   Text,
   useColorModeValue,
   Box,
-  Link,
   Image,
   Skeleton,
 } from '@chakra-ui/react'
 import { usePalette } from 'react-palette'
 import { MotionBox } from '../shared/animations/motion'
 import { item } from '../shared/animations/page-transitions'
-import NextLink from 'next/link'
 import { useLinkColor } from 'components/theme'
 
-const SkillCard = ({ name, image, link, description }) => {
+const SkillCard = ({ name, image, description }) => {
   const linkColor = useLinkColor()
   const { data, loading } = usePalette(image)
 

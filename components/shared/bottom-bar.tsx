@@ -1,36 +1,20 @@
 import React, {
   JSXElementConstructor,
   ReactElement,
-  ReactNodeArray,
-  ReactPortal,
   useState
 } from 'react';
 import {
-  AiFillPhone,
-  AiFillTrophy,
   AiOutlineHome,
   AiOutlinePhone,
   AiOutlineProject,
-  AiOutlineTrophy,
-  AiTwotoneTrophy
-} from 'react-icons/ai';
+  AiOutlineTrophy} from 'react-icons/ai';
 import { AiOutlineUser } from 'react-icons/ai';
 import { BiBook } from 'react-icons/bi';
-import { RiServiceLine } from 'react-icons/ri';
-import { BiMessageSquareDetail } from 'react-icons/bi';
 import {
   Box,
-  Flex,
-  Avatar,
   HStack,
-  Link,
-  IconButton,
   useDisclosure,
-  useColorModeValue,
-  Stack,
-  Circle
-} from '@chakra-ui/react';
-import NextLink from 'next/link';
+  useColorModeValue} from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import { useLinkColor } from 'components/theme';
 

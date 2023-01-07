@@ -159,8 +159,11 @@ const Home: React.FC = () => {
             </Box>
             from{' '}
             <Box as="span" whiteSpace="nowrap">
-              Vancouver 🇨🇦
+              Vancouver 🇨🇦.
             </Box>{' '}
+            <Box fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
+            I am currently in my 4th year of Computer Science and Statistics at the University of British Columbia.
+            </Box>
             <Box fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
               This is my public sanctum, where I write about
               the things I&apos;m working on and share what I&apos;ve learned 😊

@@ -86,6 +86,18 @@ export const companies = [
 
 export const volunteering = [
   {
+    title: 'Science Undergrduate Society',
+    alt: 'SUS image',
+    role: 'Computer Science Representative',
+    description: [
+      `✅ Represented the Computer Science department of UBC on the counsel of the Science Undergraduate Society.`,
+      `✅ Acted as a liaison between the Computer Science Student Society and the Science Undergraduate Society.`
+    ],
+    // skills: ['ruby', 'rails', 'python', 'typescript', 'react', 'aws'],
+    period: 'Nov 2022 - Present',
+    logo: '/assets/images/logos/SUS.jpg'
+  },
+  {
     title: 'Computer Science Student Society',
     alt: 'CS image',
     role: 'Communications and Social Officer',
@@ -158,119 +170,119 @@ export const skillsArray = [
     description: 'Web development',
     link: 'https://reactjs.org/',
     type: 'web',
-    image: '/assets/images/skills/react.png'
+    image: '/assets/images/skills/react-min.png'
   },
   {
     name: 'Flutter',
     description: 'App development',
     link: 'https://reactjs.org/',
     type: 'app',
-    image: '/assets/images/skills/flutter.png'
+    image: '/assets/images/skills/flutter-min.png'
   },
   {
     name: 'Dart',
     description: 'App development',
     link: 'https://reactjs.org/',
     type: 'app',
-    image: '/assets/images/skills/dart.png'
+    image: '/assets/images/skills/dart-min.png'
   },
   {
     name: 'R',
     description: 'Statistical computing',
     link: 'https://reactjs.org/',
     type: 'oop',
-    image: '/assets/images/skills/r.jpeg'
+    image: '/assets/images/skills/r-min.jpeg'
   },
   {
     name: 'Python',
     description: 'Data analysis, Jupyter',
     link: 'https://www.python.org/',
     type: 'oop',
-    image: '/assets/images/skills/python.png'
+    image: '/assets/images/skills/python-min.png'
   },
   {
     name: 'Javascript',
     description: 'Web development',
     link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     type: 'web',
-    image: '/assets/images/skills/javascript.png'
+    image: '/assets/images/skills/javascript-min.png'
   },
   {
     name: 'Typescript',
     description: 'Web development',
     link: 'https://www.typescriptlang.org/',
     type: 'web',
-    image: '/assets/images/skills/typescript.png'
+    image: '/assets/images/skills/typescript-min.png'
   },
   {
     name: 'Html5',
     description: 'Web layouts',
     link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
     type: 'web',
-    image: '/assets/images/skills/html-5.png'
+    image: '/assets/images/skills/html-5-min.png'
   },
   {
     name: 'Css3',
     description: 'Web design',
     link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     type: 'web',
-    image: '/assets/images/skills/css3.png'
+    image: '/assets/images/skills/css3-min.png'
   },
   {
     name: 'Bootstrap',
     description: 'Web design',
     link: 'https://getbootstrap.com/',
     type: 'web',
-    image: '/assets/images/skills/bootstrap.png'
+    image: '/assets/images/skills/bootstrap-min.png'
   },
   {
     name: 'Postgres',
     description: 'Database',
     link: 'https://www.postgresql.org/',
     type: 'database',
-    image: '/assets/images/skills/postgresql.png'
+    image: '/assets/images/skills/postgresql-min.png'
   },
   {
     name: 'Mysql',
     description: 'Database',
     link: 'https://www.mysql.com/',
     type: 'database',
-    image: '/assets/images/skills/mysql.png'
+    image: '/assets/images/skills/mysql-min.png'
   },
   {
     name: 'Redis',
     description: 'Database',
     link: 'https://redis.io/',
     type: 'database',
-    image: '/assets/images/skills/redis.png'
+    image: '/assets/images/skills/redis-min.png'
   },
   {
     name: 'MongoDB',
     description: 'Database',
     link: 'https://redis.io/',
     type: 'database',
-    image: '/assets/images/skills/mongodb.png'
+    image: '/assets/images/skills/mongodb-min.png'
   },
   {
     name: 'Heroku',
     description: 'Deploy, manage apps',
     link: 'https://www.heroku.com/',
     type: 'devops',
-    image: '/assets/images/skills/heroku.png'
+    image: '/assets/images/skills/heroku-min.png'
   },
   {
     name: 'AWS',
     description: 'Cloud Computing',
     link: 'https://aws.amazon.com/',
     type: 'devops',
-    image: 'assets/images/skills/aws.png'
+    image: 'assets/images/skills/aws-min.png'
   },
   {
     name: 'Google Cloud',
     description: 'Cloud Computing',
     link: 'https://aws.amazon.com/',
     type: 'devops',
-    image: 'assets/images/skills/google-cloud.png'
+    image: 'assets/images/skills/google-cloud-min.png'
   },
   {
     name: 'Vercel',
@@ -284,70 +296,70 @@ export const skillsArray = [
     description: 'Devops',
     link: 'https://aws.amazon.com/',
     type: 'devops',
-    image: 'assets/images/skills/terraform.png'
+    image: 'assets/images/skills/terraform-min.png'
   },
   {
     name: 'Node.js',
     description: 'Backend runtime env',
     link: 'https://aws.amazon.com/',
     type: 'devops',
-    image: 'assets/images/skills/node.png'
+    image: 'assets/images/skills/node-min.png'
   },
   {
     name: 'Next.js',
     description: 'Web dev framework',
     link: 'https://aws.amazon.com/',
     type: 'web',
-    image: 'assets/images/skills/node.png'
+    image: 'assets/images/skills/node-min.png'
   },
   {
     name: 'Firebase',
     description: 'Devops',
     link: 'https://aws.amazon.com/',
     type: 'devops',
-    image: 'assets/images/skills/firebase.png'
+    image: 'assets/images/skills/firebase-min.png'
   },
   {
     name: 'Visual Studio Code',
     description: 'Code editor of choice',
     link: 'https://code.visualstudio.com/',
     type: 'web',
-    image: '/assets/images/skills/vscode.png'
+    image: '/assets/images/skills/vscode-min.png'
   },
   {
     name: 'Android Studio',
     description: 'Code editor of choice',
     link: 'https://code.visualstudio.com/',
     type: 'app',
-    image: '/assets/images/skills/android.png'
+    image: '/assets/images/skills/android-min.png'
   },
   {
     name: 'Figma',
     description: 'Collaborative Design',
     link: 'https://www.figma.com/',
     type: 'design',
-    image: '/assets/images/skills/figma.png'
+    image: '/assets/images/skills/figma-min.png'
   },
   {
     name: 'Adobe Suite',
     description: 'Collaborative Design',
     link: 'https://www.figma.com/',
     type: 'design',
-    image: '/assets/images/skills/adobe.png'
+    image: '/assets/images/skills/adobe-min.png'
   },
   {
     name: 'Canva',
     description: 'Graphic Design',
     link: 'https://www.figma.com/',
     type: 'design',
-    image: '/assets/images/skills/canva.jpeg'
+    image: '/assets/images/skills/canva-min.jpeg'
   },
   {
     name: 'Chakra UI',
     description: 'UI Kit',
     link: 'https://www.figma.com/',
     type: 'web',
-    image: '/assets/images/skills/chakra.jpg'
+    image: '/assets/images/skills/chakra-min.jpg'
   },
   {
     name: 'Ant Design',
@@ -361,21 +373,21 @@ export const skillsArray = [
     description: 'Web UI Kit',
     link: 'https://www.figma.com/',
     type: 'web',
-    image: '/assets/images/skills/material.png'
+    image: '/assets/images/skills/material-min.png'
   },
   {
     name: 'Racket',
     description: 'Multi-paradigm programming',
     link: 'https://www.figma.com/',
     type: 'oop',
-    image: '/assets/images/skills/racket.png'
+    image: '/assets/images/skills/racket-min.png'
   },
   {
     name: 'Java',
     description: 'Object Oriented Programming',
     link: 'https://www.figma.com/',
     type: 'oop',
-    image: '/assets/images/skills/java.png'
+    image: '/assets/images/skills/java-min.png'
   },
   {
     name: 'Solidity',
